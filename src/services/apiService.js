@@ -6,7 +6,7 @@ export const commonApiService = createApi({
   name: "commonApi",
   refetchOnMountOrArgChange: true,
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://apptesting.docsumo.com/api/v1/eevee",
+    baseUrl: process.env.REACT_APP_BASE_URL,
     prepareHeaders: (headers, { getState }) => {
       headers.set("Access-Control-Allow-Origin", "*");
       return headers;
