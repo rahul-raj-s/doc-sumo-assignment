@@ -1,0 +1,43 @@
+.input-group {
+  margin-top: 28px;
+  label {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    display: inline-block;
+    color: rgba(24, 24, 24, 0.8);
+  }
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    position: relative;
+    input {
+      width: 100%;
+      height: 40px;
+      outline: none;
+      padding: 11px 14px;
+      border-radius: 4px;
+      background-color: #fff;
+      border: 1px solid #a3adce;
+      font: normal 500 16px/1 Lato, sans-serif;
+    }
+    .eye-icon{
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+      height: 24px;
+      width: 24px;
+    }
+  }
+  &.error {
+    .input-wrapper {
+      input {
+        border-color: #c2004f
+      }
+    }
+    .input-error{
+      color: #c2004f
+    }
+  }
+}
